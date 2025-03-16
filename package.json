@@ -1,6 +1,7 @@
 { 
   "scripts": {
-  "start": "node server.js"
+  "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
 },
   "engines":{
     "node":"22.13.0"
@@ -8,9 +9,6 @@
   "name": "airbnbclone",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "",
   "license": "ISC",
   "description": "",
