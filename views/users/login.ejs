@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate") -%>
+
+<style>
+    @media(max-width:768px){
+        .form-control{
+            width: 100% !important;
+        }
+    }
+</style>
+
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <h1 class="col-6 offset-3">Login on Airbnb</h1>
+        <form action="/login" method="POST" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="user" class="form-label">Username : </label>
+                <input type="text" name="username" id="user" class="form-control"  autocomplete="off" required>
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Password : </label>
+                <input type="password" name="password" id="pass" class="form-control" autocomplete="off" required>
+            </div>
+            <button class="btn btn-outline-danger">Login</button>
+        </form>
+    </div>
+</div>
+

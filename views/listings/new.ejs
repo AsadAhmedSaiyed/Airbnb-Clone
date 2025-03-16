@@ -1,0 +1,52 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br>
+            <h1>Create a new Listing</h1>
+            <form action="/listings" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+                <div class="mb-3">
+                    <label for="title" class="form-label">Enter Title : </label>
+                    <input type="text" name="listing[title]" id="title" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="desc" class="form-label">Enter Description : </label>
+                     <textarea name="listing[description]" id="desc" class="form-control" required></textarea>
+                     <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="img" class="form-label">Upload Image : </label>
+                    <input type="file" name="listing[image]" id="img" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Enter Price : </label>
+                    <input type="number" name="listing[price]" id="price" class="form-control" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="loc" class="form-label">Enter Location : </label>
+                        <input type="text" name="listing[location]" id="loc" class="form-control" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Invalid</div>
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="country" class="form-label">Enter Country : </label>
+                        <input type="text" name="listing[country]" id="country" class="form-control" required>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Invalid</div>
+                    </div>
+                </div>
+                <button class="btn btn-outline-danger add-btn">Add</button>
+                <br><br><br>
+            </form>
+            <br>
+        </div>
+    </div>
+</body>
