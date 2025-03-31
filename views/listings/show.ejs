@@ -63,7 +63,7 @@
      <hr>
     <%}%> 
     <%if(listing.reviews.length > 0){%>
-      <div class="row">
+      <div class="row reviews">
         <p><b> All Reviews </b></p>
         <%for(review of listing.reviews){%>
           <div class="card col-5 ms-3 mb-3">
@@ -82,7 +82,11 @@
     <div class="col-md-8 offset-md-2 mb-3 map">
       <h3>Where you'll be</h3>
       <div id="map"></div>
-      <style>
+      <style>   
+        .reviews{
+          display:flex;
+          flex-wrap:wrap;
+        }
         .map{
           margin-left:0 ;
         }
