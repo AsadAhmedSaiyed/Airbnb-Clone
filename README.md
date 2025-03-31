@@ -1,4 +1,3 @@
-# Airbnb-Clone
 # WanderLust - Airbnb-Inspired Rental Web App
 
 ## 🌍 About WanderLust
