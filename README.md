@@ -5,7 +5,7 @@ WanderLust is a dynamic web application inspired by Airbnb, allowing users to li
 
 ## 🚀 Features
 - **User Authentication & Authorization** (Passport.js)
-- **Session Management** (Express-Session + MongoStore)
+- **Session Management** (Express-Session)
 - **Cloudinary Image Uploads** for property listings
 - **Interactive Map Integration** (Leaflet.js API)
 - **Search Functionality** – Find listings by title
@@ -31,7 +31,6 @@ WanderLust is a dynamic web application inspired by Airbnb, allowing users to li
 - **File Storage:** Cloudinary
 - **Map Integration:** Leaflet.js
 - **Validations:** Joi
-- **Session Storage:** MongoStore
 
 ## 🏗 Project Structure (MVC Pattern)
 ```
